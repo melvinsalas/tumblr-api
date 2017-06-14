@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{5CA2FB72-86CF-4B5E-B8F3-6562746A81C9}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TumblrApi/Controllers/PostsController.cs">
+    <Files>
+      <File FileName="TumblrApi/Controllers/PostsController.cs" Line="26" Column="4" />
+      <File FileName="TumblrApi/Models/Post.cs" Line="15" Column="26" />
+      <File FileName="TumblrApi/Models/User.cs" Line="16" Column="24" />
+      <File FileName="TumblrApi/Models/MongoDBContext.cs" Line="32" Column="74" />
+      <File FileName="TumblrApi/Controllers/UsersController.cs" Line="12" Column="3" />
+      <File FileName="TumblrApi/Models/Blog.cs" Line="16" Column="4" />
+      <File FileName="TumblrApi/Controllers/BlogsController.cs" Line="12" Column="13" />
+      <File FileName="TumblrApi/Startup.cs" Line="43" Column="1" />
+      <File FileName="TumblrApi/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="TumblrApi/Program.cs" Line="1" Column="1" />
+      <File FileName="TumblrApi/appsettings.json" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.TumblrApi PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
