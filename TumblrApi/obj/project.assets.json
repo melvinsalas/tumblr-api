@@ -2,6 +2,76 @@
   "version": 2,
   "targets": {
     ".NETCoreApp,Version=v1.1": {
+      "AWSSDK.Core/3.3.14.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.1",
+          "System.Collections": "4.0.11",
+          "System.Collections.NonGeneric": "4.0.1",
+          "System.Console": "4.0.0",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Diagnostics.Tools": "4.0.1",
+          "System.IO.FileSystem": "4.0.1",
+          "System.Linq": "4.1.0",
+          "System.Net.Http": "4.1.0",
+          "System.Net.Requests": "4.0.11",
+          "System.Reflection.Extensions": "4.0.1",
+          "System.Reflection.TypeExtensions": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Security.Cryptography.Algorithms": "4.2.0",
+          "System.Security.Cryptography.Csp": "4.0.0",
+          "System.Text.Encoding.Extensions": "4.0.11",
+          "System.Text.RegularExpressions": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Threading.Thread": "4.0.0",
+          "System.Xml.XDocument": "4.0.11"
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.Core.dll": {}
+        }
+      },
+      "AWSSDK.DynamoDBv2/3.3.4.13": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.14, 3.4.0)"
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.DynamoDBv2.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.DynamoDBv2.dll": {}
+        }
+      },
+      "AWSSDK.Extensions.NETCore.Setup/3.3.1": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.0, 3.4.0)",
+          "Microsoft.Extensions.Configuration.Abstractions": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.Extensions.NETCore.Setup.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.Extensions.NETCore.Setup.dll": {}
+        }
+      },
+      "AWSSDK.S3/3.3.7": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.14.1, 3.4.0)"
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.S3.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.S3.dll": {}
+        }
+      },
       "Libuv/1.9.1": {
         "type": "package",
         "dependencies": {
@@ -3169,7 +3239,7 @@
           "System.Threading": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Security.Cryptography.Csp.dll": {}
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netstandard1.3/System.Security.Cryptography.Csp.dll": {
@@ -3705,6 +3775,76 @@
       }
     },
     ".NETCoreApp,Version=v1.1/win": {
+      "AWSSDK.Core/3.3.14.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.1",
+          "System.Collections": "4.0.11",
+          "System.Collections.NonGeneric": "4.0.1",
+          "System.Console": "4.0.0",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Diagnostics.Tools": "4.0.1",
+          "System.IO.FileSystem": "4.0.1",
+          "System.Linq": "4.1.0",
+          "System.Net.Http": "4.1.0",
+          "System.Net.Requests": "4.0.11",
+          "System.Reflection.Extensions": "4.0.1",
+          "System.Reflection.TypeExtensions": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Security.Cryptography.Algorithms": "4.2.0",
+          "System.Security.Cryptography.Csp": "4.0.0",
+          "System.Text.Encoding.Extensions": "4.0.11",
+          "System.Text.RegularExpressions": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Threading.Thread": "4.0.0",
+          "System.Xml.XDocument": "4.0.11"
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.Core.dll": {}
+        }
+      },
+      "AWSSDK.DynamoDBv2/3.3.4.13": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.14, 3.4.0)"
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.DynamoDBv2.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.DynamoDBv2.dll": {}
+        }
+      },
+      "AWSSDK.Extensions.NETCore.Setup/3.3.1": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.0, 3.4.0)",
+          "Microsoft.Extensions.Configuration.Abstractions": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.Extensions.NETCore.Setup.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.Extensions.NETCore.Setup.dll": {}
+        }
+      },
+      "AWSSDK.S3/3.3.7": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.14.1, 3.4.0)"
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.S3.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.S3.dll": {}
+        }
+      },
       "Libuv/1.9.1": {
         "type": "package",
         "dependencies": {
@@ -6950,7 +7090,7 @@
           "System.Threading": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Security.Cryptography.Csp.dll": {}
         },
         "runtime": {
           "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.Csp.dll": {}
@@ -7435,6 +7575,76 @@
       }
     },
     ".NETCoreApp,Version=v1.1/win-x64": {
+      "AWSSDK.Core/3.3.14.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.1",
+          "System.Collections": "4.0.11",
+          "System.Collections.NonGeneric": "4.0.1",
+          "System.Console": "4.0.0",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Diagnostics.Tools": "4.0.1",
+          "System.IO.FileSystem": "4.0.1",
+          "System.Linq": "4.1.0",
+          "System.Net.Http": "4.1.0",
+          "System.Net.Requests": "4.0.11",
+          "System.Reflection.Extensions": "4.0.1",
+          "System.Reflection.TypeExtensions": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Security.Cryptography.Algorithms": "4.2.0",
+          "System.Security.Cryptography.Csp": "4.0.0",
+          "System.Text.Encoding.Extensions": "4.0.11",
+          "System.Text.RegularExpressions": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Threading.Thread": "4.0.0",
+          "System.Xml.XDocument": "4.0.11"
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.Core.dll": {}
+        }
+      },
+      "AWSSDK.DynamoDBv2/3.3.4.13": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.14, 3.4.0)"
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.DynamoDBv2.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.DynamoDBv2.dll": {}
+        }
+      },
+      "AWSSDK.Extensions.NETCore.Setup/3.3.1": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.0, 3.4.0)",
+          "Microsoft.Extensions.Configuration.Abstractions": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.Extensions.NETCore.Setup.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.Extensions.NETCore.Setup.dll": {}
+        }
+      },
+      "AWSSDK.S3/3.3.7": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.14.1, 3.4.0)"
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.S3.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.S3.dll": {}
+        }
+      },
       "Libuv/1.9.1": {
         "type": "package",
         "dependencies": {
@@ -10678,7 +10888,7 @@
           "System.Threading": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Security.Cryptography.Csp.dll": {}
         },
         "runtime": {
           "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.Csp.dll": {}
@@ -11163,6 +11373,76 @@
       }
     },
     ".NETCoreApp,Version=v1.1/win-x86": {
+      "AWSSDK.Core/3.3.14.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.1",
+          "System.Collections": "4.0.11",
+          "System.Collections.NonGeneric": "4.0.1",
+          "System.Console": "4.0.0",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Diagnostics.Tools": "4.0.1",
+          "System.IO.FileSystem": "4.0.1",
+          "System.Linq": "4.1.0",
+          "System.Net.Http": "4.1.0",
+          "System.Net.Requests": "4.0.11",
+          "System.Reflection.Extensions": "4.0.1",
+          "System.Reflection.TypeExtensions": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Security.Cryptography.Algorithms": "4.2.0",
+          "System.Security.Cryptography.Csp": "4.0.0",
+          "System.Text.Encoding.Extensions": "4.0.11",
+          "System.Text.RegularExpressions": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Threading.Thread": "4.0.0",
+          "System.Xml.XDocument": "4.0.11"
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.Core.dll": {}
+        }
+      },
+      "AWSSDK.DynamoDBv2/3.3.4.13": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.14, 3.4.0)"
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.DynamoDBv2.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.DynamoDBv2.dll": {}
+        }
+      },
+      "AWSSDK.Extensions.NETCore.Setup/3.3.1": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.0, 3.4.0)",
+          "Microsoft.Extensions.Configuration.Abstractions": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.Extensions.NETCore.Setup.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.Extensions.NETCore.Setup.dll": {}
+        }
+      },
+      "AWSSDK.S3/3.3.7": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.3.14.1, 3.4.0)"
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.S3.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.S3.dll": {}
+        }
+      },
       "Libuv/1.9.1": {
         "type": "package",
         "dependencies": {
@@ -14406,7 +14686,7 @@
           "System.Threading": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Security.Cryptography.Csp.dll": {}
         },
         "runtime": {
           "runtimes/win/lib/netstandard1.3/System.Security.Cryptography.Csp.dll": {}
@@ -14892,6 +15172,122 @@
     }
   },
   "libraries": {
+    "AWSSDK.Core/3.3.14.1": {
+      "sha512": "PXJWRGmCyFjdh+jPikOvIc3LEswiHGPt7GubgU1oAi8Fbbpfa8l0hOutHIPGQCrehZ+AIZgiqCFa5/kNSnLgOw==",
+      "type": "package",
+      "path": "awssdk.core/3.3.14.1",
+      "files": [
+        "awssdk.core.3.3.14.1.nupkg.sha512",
+        "awssdk.core.nuspec",
+        "lib/MonoAndroid10/AWSSDK.Core.XML",
+        "lib/MonoAndroid10/AWSSDK.Core.dll",
+        "lib/MonoAndroid10/AWSSDK.Core.pdb",
+        "lib/MonoTouch10/AWSSDK.Core.XML",
+        "lib/MonoTouch10/AWSSDK.Core.dll",
+        "lib/Xamarin.Mac20/AWSSDK.Core.XML",
+        "lib/Xamarin.Mac20/AWSSDK.Core.dll",
+        "lib/Xamarin.iOS10/AWSSDK.Core.XML",
+        "lib/Xamarin.iOS10/AWSSDK.Core.dll",
+        "lib/net35/AWSSDK.Core.XML",
+        "lib/net35/AWSSDK.Core.dll",
+        "lib/net35/AWSSDK.Core.pdb",
+        "lib/net45/AWSSDK.Core.XML",
+        "lib/net45/AWSSDK.Core.dll",
+        "lib/net45/AWSSDK.Core.pdb",
+        "lib/netstandard1.3/AWSSDK.Core.dll",
+        "lib/netstandard1.3/AWSSDK.Core.pdb",
+        "lib/netstandard1.3/AWSSDK.Core.xml",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.XML",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.dll",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.pdb",
+        "lib/uap/AWSSDK.Core.XML",
+        "lib/uap/AWSSDK.Core.dll",
+        "lib/uap/AWSSDK.Core.pdb",
+        "lib/win8/AWSSDK.Core.XML",
+        "lib/win8/AWSSDK.Core.dll",
+        "lib/win8/AWSSDK.Core.pdb",
+        "lib/wp8/AWSSDK.Core.XML",
+        "lib/wp8/AWSSDK.Core.dll",
+        "lib/wp8/AWSSDK.Core.pdb",
+        "lib/wpa81/AWSSDK.Core.XML",
+        "lib/wpa81/AWSSDK.Core.dll",
+        "lib/wpa81/AWSSDK.Core.pdb",
+        "tools/account-management.ps1"
+      ]
+    },
+    "AWSSDK.DynamoDBv2/3.3.4.13": {
+      "sha512": "eU+mx1WvP03dK0e6FT4WQDwJam4t/jFBGFUHJsyEhJu4ukZBZuOQqiJWIwMsxScJAvKNJyfFuzDbYBrSixLpaw==",
+      "type": "package",
+      "path": "awssdk.dynamodbv2/3.3.4.13",
+      "files": [
+        "analyzers/dotnet/cs/AWSSDK.DynamoDBv2.CodeAnalysis.dll",
+        "awssdk.dynamodbv2.3.3.4.13.nupkg.sha512",
+        "awssdk.dynamodbv2.nuspec",
+        "lib/MonoAndroid10/AWSSDK.DynamoDBv2.XML",
+        "lib/MonoAndroid10/AWSSDK.DynamoDBv2.dll",
+        "lib/MonoTouch10/AWSSDK.DynamoDBv2.XML",
+        "lib/MonoTouch10/AWSSDK.DynamoDBv2.dll",
+        "lib/MonoTouch10/AWSSDK.DynamoDBv2.pdb",
+        "lib/Xamarin.iOS10/AWSSDK.DynamoDBv2.XML",
+        "lib/Xamarin.iOS10/AWSSDK.DynamoDBv2.dll",
+        "lib/net35/AWSSDK.DynamoDBv2.XML",
+        "lib/net35/AWSSDK.DynamoDBv2.dll",
+        "lib/net35/AWSSDK.DynamoDBv2.pdb",
+        "lib/net45/AWSSDK.DynamoDBv2.XML",
+        "lib/net45/AWSSDK.DynamoDBv2.dll",
+        "lib/net45/AWSSDK.DynamoDBv2.pdb",
+        "lib/netstandard1.3/AWSSDK.DynamoDBv2.dll",
+        "lib/netstandard1.3/AWSSDK.DynamoDBv2.pdb",
+        "lib/netstandard1.3/AWSSDK.DynamoDBv2.xml",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.DynamoDBv2.XML",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.DynamoDBv2.dll",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.DynamoDBv2.pdb",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "AWSSDK.Extensions.NETCore.Setup/3.3.1": {
+      "sha512": "jFmyBySbDQcEDcWLnFw1EwxmY/DcuAcIpG+d79vMEhmjjCY4A61G7ghr7BBlMCe/V4tW6hcY3x2TyggvVw2eQg==",
+      "type": "package",
+      "path": "awssdk.extensions.netcore.setup/3.3.1",
+      "files": [
+        "awssdk.extensions.netcore.setup.3.3.1.nupkg.sha512",
+        "awssdk.extensions.netcore.setup.nuspec",
+        "lib/netstandard1.3/AWSSDK.Extensions.NETCore.Setup.dll",
+        "lib/netstandard1.3/AWSSDK.Extensions.NETCore.Setup.pdb"
+      ]
+    },
+    "AWSSDK.S3/3.3.7": {
+      "sha512": "s0iUxApA3VpEuJF5OyY8TAAFhYKtXRDTpGc5flHVMcnFc+dHZ/nVuhByFGDdLFq6EBadWh8jszx5CAZuLpC3YA==",
+      "type": "package",
+      "path": "awssdk.s3/3.3.7",
+      "files": [
+        "analyzers/dotnet/cs/AWSSDK.S3.CodeAnalysis.dll",
+        "awssdk.s3.3.3.7.nupkg.sha512",
+        "awssdk.s3.nuspec",
+        "lib/MonoAndroid10/AWSSDK.S3.XML",
+        "lib/MonoAndroid10/AWSSDK.S3.dll",
+        "lib/MonoTouch10/AWSSDK.S3.XML",
+        "lib/MonoTouch10/AWSSDK.S3.dll",
+        "lib/MonoTouch10/AWSSDK.S3.pdb",
+        "lib/Xamarin.iOS10/AWSSDK.S3.XML",
+        "lib/Xamarin.iOS10/AWSSDK.S3.dll",
+        "lib/net35/AWSSDK.S3.XML",
+        "lib/net35/AWSSDK.S3.dll",
+        "lib/net35/AWSSDK.S3.pdb",
+        "lib/net45/AWSSDK.S3.XML",
+        "lib/net45/AWSSDK.S3.dll",
+        "lib/net45/AWSSDK.S3.pdb",
+        "lib/netstandard1.3/AWSSDK.S3.dll",
+        "lib/netstandard1.3/AWSSDK.S3.pdb",
+        "lib/netstandard1.3/AWSSDK.S3.xml",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.S3.XML",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.S3.dll",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.S3.pdb",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
     "Libuv/1.9.1": {
       "sha512": "uqX2Frwf9PW8MaY7PRNY6HM5BpW1D8oj1EdqzrmbEFD5nH63Yat3aEjN/tws6Tw6Fk7LwmLBvtUh32tTeTaHiA==",
       "type": "package",
@@ -21665,6 +22061,9 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v1.1": [
+      "AWSSDK.DynamoDBv2 >= 3.3.4.13",
+      "AWSSDK.Extensions.NETCore.Setup >= 3.3.1",
+      "AWSSDK.S3 >= 3.3.7",
       "Microsoft.AspNetCore >= 1.1.2",
       "Microsoft.AspNetCore.Cors >= 1.1.2",
       "Microsoft.AspNetCore.Identity >= 1.1.2",
@@ -21724,6 +22123,18 @@
           "Microsoft.AspNetCore.Cors": {
             "target": "Package",
             "version": "1.1.2"
+          },
+          "AWSSDK.Extensions.NETCore.Setup": {
+            "target": "Package",
+            "version": "3.3.1"
+          },
+          "AWSSDK.DynamoDBv2": {
+            "target": "Package",
+            "version": "3.3.4.13"
+          },
+          "AWSSDK.S3": {
+            "target": "Package",
+            "version": "3.3.7"
           }
         }
       }

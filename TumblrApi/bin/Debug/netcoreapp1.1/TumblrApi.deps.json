@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.1",
-    "signature": "10363244a34a48c49476cfe1256ef6d19295cc9e"
+    "signature": "160ab4f3f8237c7de7efc460f63fe2a1396e03c9"
   },
   "compilationOptions": {
     "defines": [
@@ -23,6 +23,9 @@
     ".NETCoreApp,Version=v1.1": {
       "tumblrapi/1.0.0": {
         "dependencies": {
+          "AWSSDK.DynamoDBv2": "3.3.4.13",
+          "AWSSDK.Extensions.NETCore.Setup": "3.3.1",
+          "AWSSDK.S3": "3.3.7",
           "Microsoft.AspNetCore": "1.1.2",
           "Microsoft.AspNetCore.Cors": "1.1.2",
           "Microsoft.AspNetCore.Identity": "1.1.2",
@@ -36,6 +39,72 @@
         },
         "compile": {
           "TumblrApi.dll": {}
+        }
+      },
+      "awssdk.core/3.3.14.1": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.3.0",
+          "System.Collections": "4.3.0",
+          "System.Collections.NonGeneric": "4.3.0",
+          "System.Console": "4.3.0",
+          "System.Diagnostics.Debug": "4.3.0",
+          "System.Diagnostics.Tools": "4.3.0",
+          "System.IO.FileSystem": "4.3.0",
+          "System.Linq": "4.3.0",
+          "System.Net.Http": "4.3.0",
+          "System.Net.Requests": "4.3.0",
+          "System.Reflection.Extensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Runtime.Extensions": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Security.Cryptography.Algorithms": "4.3.0",
+          "System.Security.Cryptography.Csp": "4.3.0",
+          "System.Text.Encoding.Extensions": "4.3.0",
+          "System.Text.RegularExpressions": "4.3.0",
+          "System.Threading": "4.3.0",
+          "System.Threading.Thread": "4.3.0",
+          "System.Xml.XDocument": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.Core.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.Core.dll": {}
+        }
+      },
+      "awssdk.dynamodbv2/3.3.4.13": {
+        "dependencies": {
+          "AWSSDK.Core": "3.3.14.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.DynamoDBv2.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.DynamoDBv2.dll": {}
+        }
+      },
+      "awssdk.extensions.netcore.setup/3.3.1": {
+        "dependencies": {
+          "AWSSDK.Core": "3.3.14.1",
+          "Microsoft.Extensions.Configuration.Abstractions": "1.1.2",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.1.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.Extensions.NETCore.Setup.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.Extensions.NETCore.Setup.dll": {}
+        }
+      },
+      "awssdk.s3/3.3.7": {
+        "dependencies": {
+          "AWSSDK.Core": "3.3.14.1"
+        },
+        "runtime": {
+          "lib/netstandard1.3/AWSSDK.S3.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.3/AWSSDK.S3.dll": {}
         }
       },
       "microsoft.aspnetcore/1.1.2": {
@@ -2709,6 +2778,9 @@
           "System.Text.Encoding": "4.3.0",
           "System.Threading": "4.3.0"
         },
+        "compile": {
+          "ref/netstandard1.3/System.Security.Cryptography.Csp.dll": {}
+        },
         "compileOnly": true
       },
       "system.security.cryptography.encoding/4.3.0": {
@@ -3076,6 +3148,34 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "awssdk.core/3.3.14.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PXJWRGmCyFjdh+jPikOvIc3LEswiHGPt7GubgU1oAi8Fbbpfa8l0hOutHIPGQCrehZ+AIZgiqCFa5/kNSnLgOw==",
+      "path": "awssdk.core/3.3.14.1",
+      "hashPath": "awssdk.core.3.3.14.1.nupkg.sha512"
+    },
+    "awssdk.dynamodbv2/3.3.4.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-eU+mx1WvP03dK0e6FT4WQDwJam4t/jFBGFUHJsyEhJu4ukZBZuOQqiJWIwMsxScJAvKNJyfFuzDbYBrSixLpaw==",
+      "path": "awssdk.dynamodbv2/3.3.4.13",
+      "hashPath": "awssdk.dynamodbv2.3.3.4.13.nupkg.sha512"
+    },
+    "awssdk.extensions.netcore.setup/3.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jFmyBySbDQcEDcWLnFw1EwxmY/DcuAcIpG+d79vMEhmjjCY4A61G7ghr7BBlMCe/V4tW6hcY3x2TyggvVw2eQg==",
+      "path": "awssdk.extensions.netcore.setup/3.3.1",
+      "hashPath": "awssdk.extensions.netcore.setup.3.3.1.nupkg.sha512"
+    },
+    "awssdk.s3/3.3.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-s0iUxApA3VpEuJF5OyY8TAAFhYKtXRDTpGc5flHVMcnFc+dHZ/nVuhByFGDdLFq6EBadWh8jszx5CAZuLpC3YA==",
+      "path": "awssdk.s3/3.3.7",
+      "hashPath": "awssdk.s3.3.3.7.nupkg.sha512"
     },
     "microsoft.aspnetcore/1.1.2": {
       "type": "package",

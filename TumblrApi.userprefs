@@ -1,11 +1,13 @@
 ﻿<Properties StartupConfiguration="{5CA2FB72-86CF-4B5E-B8F3-6562746A81C9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TumblrApi/Models/MediaFile.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TumblrApi/Controllers/MediaController.cs">
     <Files>
-      <File FileName="TumblrApi/Controllers/MediaController.cs" Line="22" Column="43" />
-      <File FileName="TumblrApi/Controllers/AuthController.cs" Line="37" Column="2" />
-      <File FileName="TumblrApi/Controllers/PostsController.cs" Line="35" Column="1" />
-      <File FileName="TumblrApi/Models/Media.cs" Line="21" Column="1" />
-      <File FileName="TumblrApi/Models/MediaFile.cs" Line="7" Column="24" />
+      <File FileName="TumblrApi/Controllers/MediaController.cs" Line="65" Column="2" />
+      <File FileName="TumblrApi/appsettings.json" Line="13" Column="1" />
+      <File FileName="TumblrApi/appsettings.Development.json" Line="13" Column="4" />
+      <File FileName="TumblrApi/AuthenticationMiddleware.cs" Line="42" Column="52" />
+      <File FileName="TumblrApi/Program.cs" Line="15" Column="1" />
+      <File FileName="TumblrApi/Startup.cs" Line="38" Column="33" />
+      <File FileName="TumblrApi/Controllers/BlogsController.cs" Line="17" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

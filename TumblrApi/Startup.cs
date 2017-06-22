@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Amazon.DynamoDBv2;
+using Amazon.S3;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -33,6 +35,9 @@ namespace TumblrApi
             // Add framework services.
             services.AddMvc();
             services.AddCors();
+			services.AddDefaultAWSOptions(Configuration.GetAWSOptions());
+			services.AddAWSService<IAmazonS3>();
+			services.AddAWSService<IAmazonDynamoDB>();
             MongoDBContext.ConnectionString = "mongodb://user:pass@ds133378.mlab.com:33378/tumblr";
             MongoDBContext.DatabaseName = "tumblr";
             MongoDBContext.IsSSL = true;
