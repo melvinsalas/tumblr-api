@@ -15,16 +15,7 @@ namespace TumblrApi.Models
 		[BsonElement("UserId")]
 		[BsonRepresentation(BsonType.ObjectId)]
         public String UserId { get; set; }
-        [BsonElement("Title")]
-        public string Title { get; set; }
-        [BsonElement("Content")]
-        public string Content { get; set; }
-        DateTime? _published;
-        [BsonElement("Published")]
-        public DateTime Published 
-        {
-            get { return _published ?? DateTime.Now; }
-            set { _published = value; }
-        }
+		[BsonElement("Media")]
+        public Media Media { get; set; }
     }
 }

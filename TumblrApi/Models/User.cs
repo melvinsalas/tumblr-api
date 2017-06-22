@@ -15,11 +15,17 @@ namespace TumblrApi.Models
 			get { return _id ?? ObjectId.GenerateNewId().ToString(); }
 			set { _id = value; }
 		}
+		[BsonElement("Email")]
+		public string Email { get; set; }
+		[BsonElement("Username")]
+		public string UserName { get; set; }
+		[BsonElement("Password")]
+		public string Password { get; set; }
 		[BsonElement("Name")]
 		public string Name { get; set; }
-		[BsonElement("UserName")]
-		public string UserName { get; set; }
-        [BsonRepresentation(BsonType.ObjectId)]
-        public List<String> BlogId { get; set; }
+		[BsonElement("Photo")]
+		public string Photo { get; set; }
+		[BsonElement("Blogname")]
+		public string Blogname { get; set; }
 	}
 }

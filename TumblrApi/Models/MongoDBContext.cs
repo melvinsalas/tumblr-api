@@ -30,9 +30,9 @@ namespace TumblrApi.Models
         SslSettings GetSslSettings()
         {
             return new SslSettings { EnabledSslProtocols = SslProtocols.Tls12 };
-        }
+		}
 
-        public IMongoCollection<Post> Posts
+		public IMongoCollection<Post> Posts
 		{
 			get { return _database.GetCollection<Post>("posts"); }
 		}
@@ -45,6 +45,11 @@ namespace TumblrApi.Models
 		public IMongoCollection<Blog> Blogs
 		{
 			get { return _database.GetCollection<Blog>("blogs"); }
+		}
+
+		public IMongoCollection<Media> Media
+		{
+			get { return _database.GetCollection<Media>("media"); }
 		}
 	}
 }

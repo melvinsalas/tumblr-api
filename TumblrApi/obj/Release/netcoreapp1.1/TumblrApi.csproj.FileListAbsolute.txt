@@ -1,0 +1,10 @@
+/Users/melvinsalas/immersive/tumblr/tumblr-api/TumblrApi/bin/Release/netcoreapp1.1/TumblrApi.deps.json
+/Users/melvinsalas/immersive/tumblr/tumblr-api/TumblrApi/bin/Release/netcoreapp1.1/TumblrApi.runtimeconfig.json
+/Users/melvinsalas/immersive/tumblr/tumblr-api/TumblrApi/bin/Release/netcoreapp1.1/TumblrApi.runtimeconfig.dev.json
+/Users/melvinsalas/immersive/tumblr/tumblr-api/TumblrApi/bin/Release/netcoreapp1.1/TumblrApi.dll
+/Users/melvinsalas/immersive/tumblr/tumblr-api/TumblrApi/bin/Release/netcoreapp1.1/TumblrApi.pdb
+/Users/melvinsalas/immersive/tumblr/tumblr-api/TumblrApi/obj/Release/netcoreapp1.1/TumblrApi.csprojResolveAssemblyReference.cache
+/Users/melvinsalas/immersive/tumblr/tumblr-api/TumblrApi/obj/Release/netcoreapp1.1/TumblrApi.csproj.CoreCompileInputs.cache
+/Users/melvinsalas/immersive/tumblr/tumblr-api/TumblrApi/obj/Release/netcoreapp1.1/TumblrApi.AssemblyInfo.cs
+/Users/melvinsalas/immersive/tumblr/tumblr-api/TumblrApi/obj/Release/netcoreapp1.1/TumblrApi.dll
+/Users/melvinsalas/immersive/tumblr/tumblr-api/TumblrApi/obj/Release/netcoreapp1.1/TumblrApi.pdb
