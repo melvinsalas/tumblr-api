@@ -29,8 +29,21 @@ namespace TumblrApi.Controllers
 
 			if (users.Count() > 4)
                 users = users.OrderBy(_ => Guid.NewGuid()).Take(4).ToList();
+
+            var following = getFollowing();
+
+            foreach(var user in users)
+                user.IsFollowed = following.Contains(user.Id);
 		
 			return users;
 		}
+
+        public string[] getFollowing() {
+            var username = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+            var users = _context.Users.Find(m => m.Email == username);
+            var user = users.FirstOrDefault();
+            if (user.Following == null) user.Following = new string[0]; 
+            return user.Following;
+        }
 	}
 }

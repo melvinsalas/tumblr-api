@@ -37,12 +37,22 @@ namespace TumblrApi.Controllers
                                .Find(m => m.Id == post.UserId).FirstOrDefault();
             if (user == null) return null;
 
+			user.IsFollowed = getFollowing().Contains(user.Id);
+
             var radar = new Radar() {
                 User = user,
                 Post = post
             };
 
             return radar;
+        }
+
+        public string[] getFollowing() {
+            var username = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+            var users = _context.Users.Find(m => m.Email == username);
+            var user = users.FirstOrDefault();
+            if (user.Following == null) user.Following = new string[0]; 
+            return user.Following;
         }
     }
 }

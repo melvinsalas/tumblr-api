@@ -27,5 +27,6 @@ namespace TumblrApi.Models
 		public string Blogname { get; set; }
 		[BsonElement("Following")]
         public string[] Following { get; set; }
+        public bool IsFollowed { get; set; }
 	}
 }
