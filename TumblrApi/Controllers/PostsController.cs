@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
@@ -20,7 +21,13 @@ namespace TumblrApi.Controllers
         [HttpGet]
 		public IEnumerable<Post> GetAll()
 		{
-			return _context.Posts.Find(m => m.UserId == getUserId()).ToList();
+			var username = User.FindFirst(ClaimTypes.NameIdentifier).Value;
+            var user = _context.Users.Find(m => m.Email == username).FirstOrDefault();
+            if (user.Following == null) user.Following = new string[0];
+
+			return _context.Posts
+                           .Find(m => (m.UserId == user.Id || user.Following.Contains(m.UserId)))
+                           .ToList().OrderByDescending(m => m.Publish);
 		}
 
 		[HttpGet("{id}", Name = "GetPost")]
@@ -38,6 +45,7 @@ namespace TumblrApi.Controllers
 			if (post == null) return BadRequest();
 			if (getUserId() == null) return StatusCode(409);
             post.UserId = getUserId();
+            post.Publish = DateTime.Now;
 			_context.Posts.InsertOne(post);
 			return CreatedAtRoute("GetPost", new { id = post.Id }, post);
 		}
@@ -45,7 +53,7 @@ namespace TumblrApi.Controllers
         public string getUserId() 
         {
 			var username = User.FindFirst(ClaimTypes.NameIdentifier).Value;
-			var users = _context.Users.Find(m => m.UserName == username);
+			var users = _context.Users.Find(m => m.Email == username);
             var user = users.FirstOrDefault();
             if(user == null) return "";
 			return user.Id;

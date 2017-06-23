@@ -33,7 +33,7 @@ namespace TumblrApi.Controllers
 		public IActionResult Create([FromBody] User user)
 		{
 			if (user == null) return BadRequest();
-            var search = _context.Users.Find(m => m.UserName == user.UserName).FirstOrDefault();
+            var search = _context.Users.Find(m => m.Email == user.Email).FirstOrDefault();
             if (search != null) return StatusCode(409); // Conflict
 			_context.Users.InsertOne(user);
 			return CreatedAtRoute("GetUser", new { id = user.Id }, user);

@@ -17,8 +17,6 @@ namespace TumblrApi.Models
 		}
 		[BsonElement("Email")]
 		public string Email { get; set; }
-		[BsonElement("Username")]
-		public string UserName { get; set; }
 		[BsonElement("Password")]
 		public string Password { get; set; }
 		[BsonElement("Name")]
@@ -27,5 +25,7 @@ namespace TumblrApi.Models
 		public string Photo { get; set; }
 		[BsonElement("Blogname")]
 		public string Blogname { get; set; }
+		[BsonElement("Following")]
+        public string[] Following { get; set; }
 	}
 }

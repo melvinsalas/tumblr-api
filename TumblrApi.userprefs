@@ -1,19 +1,34 @@
 ﻿<Properties StartupConfiguration="{5CA2FB72-86CF-4B5E-B8F3-6562746A81C9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TumblrApi/Controllers/MediaController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TumblrApi/Models/Media.cs">
     <Files>
-      <File FileName="TumblrApi/Controllers/MediaController.cs" Line="65" Column="2" />
+      <File FileName="TumblrApi/Controllers/MediaController.cs" Line="25" Column="54" />
       <File FileName="TumblrApi/appsettings.json" Line="13" Column="1" />
       <File FileName="TumblrApi/appsettings.Development.json" Line="13" Column="4" />
-      <File FileName="TumblrApi/AuthenticationMiddleware.cs" Line="42" Column="52" />
+      <File FileName="TumblrApi/AuthenticationMiddleware.cs" Line="45" Column="1" />
       <File FileName="TumblrApi/Program.cs" Line="15" Column="1" />
-      <File FileName="TumblrApi/Startup.cs" Line="38" Column="33" />
-      <File FileName="TumblrApi/Controllers/BlogsController.cs" Line="17" Column="1" />
+      <File FileName="TumblrApi/Startup.cs" Line="19" Column="6" />
+      <File FileName="TumblrApi/Controllers/BlogsController.cs" Line="36" Column="37" />
+      <File FileName="TumblrApi/Controllers/RecomendedController.cs" Line="36" Column="2" />
+      <File FileName="TumblrApi/Controllers/PostsController.cs" Line="32" Column="44" />
+      <File FileName="TumblrApi/Controllers/AuthController.cs" Line="23" Column="4" />
+      <File FileName="TumblrApi/Models/Post.cs" Line="24" Column="1" />
+      <File FileName="TumblrApi/Controllers/UsersController.cs" Line="33" Column="51" />
+      <File FileName="TumblrApi/Models/User.cs" Line="28" Column="29" />
+      <File FileName="TumblrApi/Models/Auth.cs" Line="12" Column="3" />
+      <File FileName="TumblrApi/Controllers/Radar.cs" Line="31" Column="94" />
+      <File FileName="TumblrApi/Models/Radar.cs" Line="10" Column="19" />
+      <File FileName="TumblrApi/Controllers/FollowingController.cs" Line="21" Column="58" />
+      <File FileName="TumblrApi/Models/MongoDBContext.cs" Line="21" Column="12" />
+      <File FileName="TumblrApi/Models/Following.cs" Line="7" Column="9" />
+      <File FileName="TumblrApi/Models/Blog.cs" Line="19" Column="1" />
+      <File FileName="TumblrApi/Models/Media.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/melvinsalas/immersive/tumblr-api/TumblrApi/Models/MediaPost/PostText.cs" relfile="TumblrApi/Models/MediaPost/PostText.cs" line="24" column="1" />
+      <Breakpoint file="/Users/melvinsalas/immersive/tumblr-api/TumblrApi/Controllers/FollowingController.cs" relfile="TumblrApi/Controllers/FollowingController.cs" line="23" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

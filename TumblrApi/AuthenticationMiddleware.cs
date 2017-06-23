@@ -39,7 +39,7 @@ public class AuthenticationMiddleware
                 return;
             }
 
-            var claims = new[] { new Claim(ClaimTypes.NameIdentifier, loggedUser.UserName) };
+            var claims = new[] { new Claim(ClaimTypes.NameIdentifier, loggedUser.Email) };
             var identity = new ClaimsIdentity(claims, "Basic");
             context.User = new ClaimsPrincipal(identity);
             await _next.Invoke(context);

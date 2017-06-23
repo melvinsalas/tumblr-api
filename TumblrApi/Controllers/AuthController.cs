@@ -22,12 +22,12 @@ namespace TumblrApi.Controllers
         public Auth GetAuth()
 		{
 			String username = User.FindFirst(ClaimTypes.NameIdentifier).Value;
-            User user = _context.Users.Find(m => m.UserName == username).FirstOrDefault();
+            User user = _context.Users.Find(m => m.Email == username).FirstOrDefault();
 
             Auth auth = new Auth()
             {
                 Name = user.Name,
-                UserName = user.UserName,
+                Email = user.Email,
                 Photo = user.Photo
             };
 

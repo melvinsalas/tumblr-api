@@ -25,12 +25,10 @@ namespace TumblrApi.Controllers
 		{
             var rnd = new Random();
 			String username = User.FindFirst(ClaimTypes.NameIdentifier).Value;
-            var users = _context.Users.Find(m => m.UserName != username).ToList();
+            var users = _context.Users.Find(m => m.Email != username).ToList();
 
 			if (users.Count() > 4)
-			{
                 users = users.OrderBy(_ => Guid.NewGuid()).Take(4).ToList();
-            }
 		
 			return users;
 		}

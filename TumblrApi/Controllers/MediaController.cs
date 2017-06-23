@@ -5,6 +5,7 @@ using System.Net.Http;
 using System.Security.Claims;
 using System.Threading;
 using System.Threading.Tasks;
+using Amazon;
 using Amazon.S3;
 using Amazon.S3.Model;
 using Microsoft.AspNetCore.Identity;
@@ -18,9 +19,10 @@ namespace TumblrApi.Controllers
     public class MediaController : Controller
     {
         MongoDBContext _context;
-        string _secretKey = "JmN2PvzZwJ7BkPrT28QmmVimiKT63B89N5tRiamc";
-        string _accessKey = "AKIAJ762GGDL6IP6HVBA";
+        string _secretKey = "";
+        string _accessKey = "";
         string _bucketName = "melvinsalas.tumblr";
+        RegionEndpoint _region = RegionEndpoint.USEast2;
 
         public MediaController()
         {
@@ -30,15 +32,15 @@ namespace TumblrApi.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateAsync([FromBody] MediaFile file)
         {
-            // verify null request
+            // Verify Bad Request
             if (file == null) return BadRequest();
 
-            // set states
-            var client = new AmazonS3Client(_accessKey, _secretKey, Amazon.RegionEndpoint.USEast2);
+            // Set varibles & new states
+            var client = new AmazonS3Client(_accessKey, _secretKey, _region);
             var memory = new MemoryStream(Convert.FromBase64String(file.Bytes));
             var name = Guid.NewGuid().ToString() + "-" + file.Name.Replace(' ', '_');
 
-            // prepare request
+            // Prepare aws request
             PutObjectRequest request = new PutObjectRequest
             {
                 BucketName = _bucketName,
@@ -47,11 +49,11 @@ namespace TumblrApi.Controllers
                 CannedACL = S3CannedACL.PublicRead
             };
 
-            // try put object
+            // Try to publish
             try { await client.PutObjectAsync(request); }
             catch (Exception e) { Console.Write(e.Message); }
 
-            // return file name
+            // Return filename
             return Json(name);
         }
     }
